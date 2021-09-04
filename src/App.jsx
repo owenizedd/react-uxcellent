@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { PageHeader, Menu, Button, Typography } from 'antd'
+import BenefitBox from './components/BenefitBox';
 import 'antd/dist/antd.css';
 import './App.css'
 
@@ -54,7 +55,7 @@ function App() {
         />
       </div>
       <main>
-        <section style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '50px 100px 0 100px'}}>
+        <section className="section-text-image">
           <div className="section-content">
             <Typography.Title>DIGITAL PRODUCT<br/>DEVELOPMENT CONFERENCE</Typography.Title>
             <Typography.Paragraph>Engaging minds, empowering success. Event Name: {eventName}</Typography.Paragraph>
@@ -77,6 +78,65 @@ function App() {
             UXCellent Digital Product Development Conference will bring together the brightest minds behind successful companies and 
             teach you how to do it right.  
           </Typography.Paragraph>
+        </section>
+        <section className="section-text-image">
+          <img src="https://via.placeholder.com/300"/>
+          <div className="section-content">
+            <Typography.Title className="text-center">ABOUT THIS EVENT</Typography.Title>
+            <Typography.Paragraph className="padding-left-5">This event is open from December 1st 2021 - January 10th 2022. All of selected participants will be 
+given exclusive workshop, webinar and mentoring to develop their products. They will be given the 
+opportunity to attract the judges. They also be given tools and resources to create 
+outcome-oriented product. Showcase will be scheduled in main event.</Typography.Paragraph>
+          </div>
+        </section>
+        <section style={{padding: '50px 200px 75px 200px', backgroundColor: '#F2F2F2'}}>
+          <Typography.Title style={{textAlign: 'center'}}>WHO SHOULD ATTEND?</Typography.Title>
+          <div className="roles">
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT MANAGERS</div>
+            <div>PRODUCT ENGINEERS</div>
+            <div>PRODUCT MARKETERS</div>
+            <div>DATA ANALYSTS</div>
+            <div>PRODUCT ENTHUSIASTS</div>
+          </div>
+        </section>
+        <section style={{padding: '0px 200px 75px 200px'}}>
+          <Typography.Title style={{textAlign: 'center'}}>WHY SHOULD ATTEND?</Typography.Title>
+          <div className="benefits">
+            <BenefitBox imageUrl="https://via.placeholder.com/150" description="Take away 600 minutes of practical content"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/150" description="Learn from product leaders of high-growth products"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/150" description="Connect with product thinkers around the region"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/150" description="Find out best practices on how to build winning products"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/150" description="Discover your next product talents"/>
+          </div>
+        </section>
+        <section style={{padding: '50px 200px 75px 200px'}}>
+          <Typography.Title style={{textAlign: 'center'}}>AGENDA</Typography.Title>
+          <div className="roles half">
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+          </div>
+        </section>
+        <section style={{padding: '0px 200px 75px 200px'}}>
+          <Typography.Title style={{textAlign: 'center'}}>SPEAKERS</Typography.Title>
+          <div className="speakers">
+            <BenefitBox imageUrl="https://via.placeholder.com/300" description="Anthony"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/300" description="James"/>
+            <BenefitBox imageUrl="https://via.placeholder.com/300" description="Bob"/>
+          </div>
+        </section>
+        <section style={{padding: '50px 200px 75px 200px'}}>
+          <Typography.Title style={{textAlign: 'center'}}>OUR SPONSORS</Typography.Title>
+          <div className="roles half">
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+            <div>PRODUCT LEADERS</div>
+          </div>
         </section>
       </main>
     </div>
